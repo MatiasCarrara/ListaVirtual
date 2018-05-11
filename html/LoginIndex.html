@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="C:\Users\Alumno\ListaVirtual\css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">        
+    <link rel="stylesheet" href="C:\Users\Alumno\ListaVirtual\css\index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
 </head>
 <body>
-    <div class="DivLogin">
-        <form>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-                          <option selected>Choose...</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                          Check me out
-                        </label>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                  </form>
+<div class="formprincipal">
+    <div class="imagenLogo">
+    <img src="C:\Users\Alumno\ListaVirtual\img\logo.png" alt="">
+</div>
+<form>
+  <div class="form-row formtop">
+    <div class="form-group col-md-8">
+      <label for="inputEmail4">Username</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Nombre de usuario">
     </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-8">
+        <label for="inputPassword4">Contraseña</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña">
+      </div>
+    </div>
+    <div class="form-group formchoose col-md-6">
+        <label for="inputState">Clase</label>
+        <select id="inputState" class="form-control">
+          <option selected>Seleccione</option>
+          <option>Primero TIC</option>
+          <option>Primero ADM</option>
+          <option>Segundo TIC</option>
+          <option>Segundo ADM</option>
+          <option>Tercero TIC 1</option>
+          <option>Tercero TIC 2</option>
+          <option>Tercero ADM</option>
+        </select>
+    </div>
+    <div class="ButtonLogin">
+    <button type="button" class="btn btn-dark">Ingresar</button>    
+    </div>
+</form>
+</div>
 </body>
 </html>

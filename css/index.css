@@ -1,0 +1,29 @@
+.formprincipal{
+    width: 30%;
+    height: 80%;
+    border: 1px red solid;
+    position: fixed;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.imagenLogo{
+    margin-top: 3%;
+    margin-left: 30%;
+    position: relative;
+}
+.formtop{
+    margin-top: 10%;
+}
+
+.form-row{
+    margin-left: 5%;
+}
+
+.formchoose{
+    margin-left: 5%;    
+}
+
+.ButtonLogin{
+    margin-left: 30%;
+    margin-top: 20%;
+}
