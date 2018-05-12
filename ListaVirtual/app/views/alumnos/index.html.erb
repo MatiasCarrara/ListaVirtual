@@ -1,0 +1,17 @@
+
+<h1>Listing alumnos</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th></th>
+  </tr>
+
+  <% @alumnos.each do |alumno| %>
+    <tr>
+      <td><%= alumno.title %></td>
+      <td><%= alumno.text %></td>
+      <td><%= link_to 'Show', alumno_path(alumno) %></td>
+    </tr>
+  <% end %>
