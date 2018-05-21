@@ -13,5 +13,10 @@
       <td><%= alumno.title %></td>
       <td><%= alumno.text %></td>
       <td><%= link_to 'Show', alumno_path(alumno) %></td>
+      <td><%= link_to 'Edit', edit_alumno_path(alumno) %></td>
+      <td><%= link_to 'Destroy', alumno_path(alumno),
+             method: :delete, data: { confirm: 'deseas borrar a este alumno?' } %></td>
     </tr>
   <% end %>
+
+<%= link_to 'New alumno', new_alumno_path %>
