@@ -1,0 +1,16 @@
+<%= form_with scope: :alumno, url: alumnos_path, local: true do |form| %>
+  <p>
+    <%= form.label :nombre %><br>
+    <%= form.text_field :nombre %>
+  </p>
+
+  <p>
+    <%= form.label :apellido %><br>
+    <%= form.text_field :apellido %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+<%= link_to 'Back', alumnos_path %>

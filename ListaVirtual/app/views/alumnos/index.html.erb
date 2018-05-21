@@ -1,0 +1,27 @@
+<table class="table">
+<thead class="thead-dark">
+  <tr>
+    <th>Nro de Lista</th>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Cantidad de faltas</th>
+    <th></th>
+  </tr>
+</thead>
+  <% @alumnos.each do |alumno| %>
+    <tr>
+      <td><%= alumno.id %></td>
+      <td><%= alumno.nombre %></td>
+      <td><%= alumno.apellido %></td>
+      <td></td>
+      <td>
+        <%= link_to 'Show', alumno_path(alumno) %> |
+        <%= link_to 'Edit', edit_alumno_path(alumno) %> |
+        <%= link_to 'Destroy', alumno_path(alumno),
+            method: :delete, data: { confirm: 'deseas borrar a este alumno?' } %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'New alumno', new_alumno_path %>
