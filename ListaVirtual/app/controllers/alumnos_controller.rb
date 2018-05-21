@@ -44,7 +44,7 @@ class AlumnosController < ApplicationController
   private
 
   def alumno_params
-    params.require(:alumno).permit(:title, :text)
+    params.require(:alumno).permit(:nombre, :apellido)
   end
 
 end

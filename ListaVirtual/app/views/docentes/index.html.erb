@@ -1,0 +1,29 @@
+<table class="table">
+<thead class="thead-dark">
+  <tr>
+    <th>id</th>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Materia</th>
+    <th>Clases</th>
+    <th></th>
+  </tr>
+</thead>
+  <% @docentes.each do |docente| %>
+    <tr>
+      <td><%= docente.id %></td>
+      <td><%= docente.nombre %></td>
+      <td><%= docente.apellido %></td>
+      <td><%= docente.materia %></td>
+      <td><%= docente.clases %></td>
+      <td>
+        <%= link_to 'Show', docente_path(docente) %> |
+        <%= link_to 'Edit', edit_docente_path(docente) %> |
+        <%= link_to 'Destroy', docente_path(docente),
+            method: :delete, data: { confirm: 'deseas borrar a este docente?' } %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'New docente', new_docente_path %>
